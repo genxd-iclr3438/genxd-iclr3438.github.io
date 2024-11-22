@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .section {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .section-name {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .media-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .media-item {
+            flex: 1 1 calc(20% - 15px); /* Adjust the percentage for 3 or 4 items per row */
+            max-width: calc(20% - 15px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .media-item img, 
+        .media-item video {
+            width: 256px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .media-caption {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .media-item {
+                flex: 1 1 calc(50% - 15px);
+                max-width: calc(50% - 15px);
+            }
+        }
+        @media (max-width: 480px) {
+            .media-item {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section 1 -->
+    <div class="section">
+        <div class="section-name">Motion Strength Control</div>
+        <div class="media-row">
+            <div class="media-item">
+                <img src="source/motion-strength/exp1/000.png" alt="Nature 1">
+                <div class="media-caption">Condition Image</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/motion-strength/exp1/v1.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Small Motion Strength</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/motion-strength/exp1/v2.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Large Motion Strength</div>
+            </div>
+        </div>
+
+        <div class="media-row">
+            <div class="media-item">
+                <img src="source/motion-strength/exp2/000.png" alt="Nature 1">
+                <div class="media-caption">Condition Image</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/motion-strength/exp2/v1.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Small Motion Strength</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/motion-strength/exp2/v2.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Large Motion Strength</div>
+            </div>
+        </div>
+
+        <div class="media-row">
+            <div class="media-item">
+                <img src="source/motion-strength/exp4/000.png" alt="Nature 1">
+                <div class="media-caption">Condition Image</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/motion-strength/exp4/v1.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Small Motion Strength</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/motion-strength/exp4/v2.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Large Motion Strength</div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Section 2 -->
+    <div class="section">
+        <div class="section-name">Compare with MotionCtrl and CameraCtrl</div>
+        <div class="media-row">
+            <div class="media-item">
+                <img src="source/compare-mc-cc/000.png" alt="Nature 1">
+                <div class="media-caption">Condition Image</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/compare-mc-cc/mc.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">MotionCtrl</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/compare-mc-cc/cc.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">CameraCtrl</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/compare-mc-cc/genxd.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">GenXD (Ours)</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/compare-mc-cc/gt.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Ground Truth</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section 2 -->
+    <div class="section">
+        <div class="section-name">Multi-View Videos</div>
+        <div class="media-row">
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/multi-view-video/input.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Condition Video</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/multi-view-video/mv_3.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Novel View Video 1</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/multi-view-video/mv_6.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Novel View Video 2</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/multi-view-video/mv_9.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Novel View Video 3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+        <div class="section-name">Adjust Object-to-Image Occupancy Ratio</div>
+        <div class="media-row">
+            <div class="media-item">
+                <img src="source/ratio/bear.png" alt="Nature 1">
+                <div class="media-caption">Condition Image (inappropriate ratio)</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/ratio/bear_static.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Gaussian Rendered Views</div>
+            </div>
+            <div class="media-item">
+                <img src="source/ratio/bear_pad50_rgba.png" alt="Nature 1">
+                <div class="media-caption">Condition Image (appropriate ratio)</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/ratio/bear_pad50_rgba_static.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Gaussian Rendered Views</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section 2 -->
+    <div class="section">
+        <div class="section-name">More Qualitative Results (MotionCtrl demo image and trajectory)</div>
+        <div class="media-row">
+            <div class="media-item">
+                <img src="source/new-results/build.jpg" alt="Nature 1">
+                <div class="media-caption">Condition Image</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/new-results/build-3d.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">3D Generation</div>
+            </div>
+            <div class="media-item">
+                <img src="source/new-results/cat.jpg" alt="Nature 1">
+                <div class="media-caption">Condition Image</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/new-results/cat-4d.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">4D Generation</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+        <div class="section-name">Failure Cases</div>
+        <div class="media-row">
+            <div class="media-item">
+                <img src="source/failure/i1.png" alt="Nature 1">
+                <div class="media-caption">Condition Image</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/failure/v1.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">4D Generation</div>
+            </div>
+            <div class="media-item">
+                <img src="source/failure/i2.png" alt="Nature 1">
+                <div class="media-caption">Condition Image</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/failure/v2.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">4D Generation</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section 2 -->
+    <div class="section">
+        <div class="section-name">Additional Investigation on Alpha</div>
+        <div class="media-row">
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/alpha/1-3d.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Multi-View 3D Scene Generation in Static Mode</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/alpha/1-4d.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Multi-View 3D Scene Generation in <strong>Dynamic</strong> Mode</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/alpha/2-4d.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Multi-View 4D Scene Generation in Dynamic Mode</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/alpha/2-3d.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Multi-View 4D Scene Generation in <strong>Static</strong> Mode</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
