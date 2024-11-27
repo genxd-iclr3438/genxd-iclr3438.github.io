@@ -80,7 +80,7 @@
                 <div class="media-caption">Large Motion Strength</div>
             </div>
         </div>
-
+        <br>
         <div class="media-row">
             <div class="media-item">
                 <img src="source/motion-strength/exp2/000.png" alt="Nature 1">
@@ -99,7 +99,7 @@
                 <div class="media-caption">Large Motion Strength</div>
             </div>
         </div>
-
+        <br>
         <div class="media-row">
             <div class="media-item">
                 <img src="source/motion-strength/exp4/000.png" alt="Nature 1">
@@ -124,7 +124,7 @@
 
     <!-- Section 2 -->
     <div class="section">
-        <div class="section-name">Compare with MotionCtrl and CameraCtrl</div>
+        <div class="section-name">Comparison with MotionCtrl and CameraCtrl</div>
         <div class="media-row">
             <div class="media-item">
                 <img src="source/compare-mc-cc/000.png" alt="Nature 1">
@@ -155,8 +155,120 @@
                 <div class="media-caption">Ground Truth</div>
             </div>
         </div>
+        <br>
+        <div class="media-row">
+            <div class="media-item">
+                <img src="source/compare-mc-cc/3b-image.png" alt="Nature 1">
+                <div class="media-caption">Condition Image</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/compare-mc-cc/3b-mc.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">MotionCtrl</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/compare-mc-cc/3b-cc.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">CameraCtrl</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/compare-mc-cc/3b-genxd.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">GenXD (Ours)</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/compare-mc-cc/3b-gt.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Ground Truth</div>
+            </div>
+        </div>
+        <br>
+        <div class="media-row">
+            <div class="media-item">
+                <img src="source/compare-mc-cc/6d-image.png" alt="Nature 1">
+                <div class="media-caption">Condition Image</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/compare-mc-cc/6d-mc.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">MotionCtrl</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/compare-mc-cc/6d-cc.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">CameraCtrl</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/compare-mc-cc/6d-genxd.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">GenXD (Ours)</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/compare-mc-cc/6d-gt.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Ground Truth</div>
+            </div>
+        </div>
     </div>
 
+    <!-- Section 2 -->
+    <div class="section">
+        <div class="section-name">Comparison with EscherNet on GSO</div>
+        <div class="media-row">
+            <div class="media-item">
+                <img src="source/gso/lion/eschernet.png" alt="Nature 1">
+                <div class="media-caption">EscherNet</div>
+            </div>
+            <div class="media-item">
+                <img src="source/gso/lion/genxd.png" alt="Nature 1">
+                <div class="media-caption">GenXD</div>
+            </div>
+            <div class="media-item">
+                <img src="source/gso/lion/gt.png" alt="Nature 1">
+                <div class="media-caption">Ground Truth</div>
+            </div>
+        </div>
+        <br>
+        <div class="media-row">
+            <div class="media-item">
+                <img src="source/gso/mario/eschernet.png" alt="Nature 1">
+                <div class="media-caption">EscherNet</div>
+            </div>
+            <div class="media-item">
+                <img src="source/gso/mario/genxd.png" alt="Nature 1">
+                <div class="media-caption">GenXD</div>
+            </div>
+            <div class="media-item">
+                <img src="source/gso/mario/gt.png" alt="Nature 1">
+                <div class="media-caption">Ground Truth</div>
+            </div>
+        </div>
+        <br>
+        <div class="media-row">
+            <div class="media-item">
+                <img src="source/gso/turtle/eschernet.png" alt="Nature 1">
+                <div class="media-caption">EscherNet</div>
+            </div>
+            <div class="media-item">
+                <img src="source/gso/turtle/genxd.png" alt="Nature 1">
+                <div class="media-caption">GenXD</div>
+            </div>
+            <div class="media-item">
+                <img src="source/gso/turtle/gt.png" alt="Nature 1">
+                <div class="media-caption">Ground Truth</div>
+            </div>
+        </div>
+    </div>
+
+    
 
     <!-- Section 2 -->
     <div class="section">
@@ -274,8 +386,23 @@
 
     <!-- Section 2 -->
     <div class="section">
-        <div class="section-name">Additional Investigation on Alpha</div>
+        <div class="section-name">Additional Investigation on Alpha: Conflict Condition</div>
+        <div class="row-caption">
+            <strong>Given 3 views of a static scene, let GenXD to do generation in dynamic mode.</strong> 
+        </div>
         <div class="media-row">
+            <div class="media-item">
+                <img src="source/alpha/1-i1.png" alt="Nature 1">
+                <div class="media-caption">Condition Image 1</div>
+            </div>
+            <div class="media-item">
+                <img src="source/alpha/1-i2.png" alt="Nature 1">
+                <div class="media-caption">Condition Image 2</div>
+            </div>
+            <div class="media-item">
+                <img src="source/alpha/1-i2.png" alt="Nature 1">
+                <div class="media-caption">Condition Image 3</div>
+            </div>
             <div class="media-item">
                 <video autoplay muted loop>
                     <source src="source/alpha/1-3d.mp4" type="video/mp4">
@@ -287,6 +414,24 @@
                     <source src="source/alpha/1-4d.mp4" type="video/mp4">
                 </video>
                 <div class="media-caption">Multi-View 3D Scene Generation in <strong>Dynamic</strong> Mode</div>
+            </div>
+        </div>
+        <br>
+        <div class="row-caption">
+            <strong>Given 3 views of a dynamic scene, let GenXD to do generation in static mode.</strong>
+        </div>
+        <div class="media-row">
+            <div class="media-item">
+                <img src="source/alpha/2-i1.png" alt="Nature 1">
+                <div class="media-caption">Condition Image 1</div>
+            </div>
+            <div class="media-item">
+                <img src="source/alpha/2-i2.png" alt="Nature 1">
+                <div class="media-caption">Condition Image 2</div>
+            </div>
+            <div class="media-item">
+                <img src="source/alpha/2-i3.png" alt="Nature 1">
+                <div class="media-caption">Condition Image 3</div>
             </div>
             <div class="media-item">
                 <video autoplay muted loop>
@@ -325,7 +470,75 @@
                 <div class="media-caption">Rendered Depth</div>
             </div>
         </div>
+        <br>
+        <div class="media-row">
+            <div class="media-item">
+                <img src="source/single4d/image2.png" alt="Nature 1">
+                <div class="media-caption">Condition Image</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/single4d/video2.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Rendered RGB</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/single4d/depth2.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Rendered Depth</div>
+            </div>
+        </div>
     </div>
+
+
+    <!-- Section 2 -->
+    <div class="section">
+        <div class="section-name">Comparison with DreamGaussian4D</div>
+        <div class="media-row">
+
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/video-to-4d/monster-dg.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">DreamGaussian4D</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/video-to-4d/monster-genxd.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">GenXD</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/video-to-4d/monster-gt.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Ground Truth</div>
+            </div>
+        </div>
+        <br>
+        <div class="media-row">
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/video-to-4d/pistol-dg.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">DreamGaussian4D</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/video-to-4d/pistol-genxd.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">GenXD</div>
+            </div>
+            <div class="media-item">
+                <video autoplay muted loop>
+                    <source src="source/video-to-4d/pistol-gt.mp4" type="video/mp4">
+                </video>
+                <div class="media-caption">Ground Truth</div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="section">
         <div class="section-name">Results with Zero Motion Strength</div>
